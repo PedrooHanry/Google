@@ -181,8 +181,9 @@ footer {
     display: flex;
     flex-direction: column;
     background: #f2f2f2;
-    position: relative;
+    position: fixed;
     width: 100%;
+    bottom: 0;
 }
 
 footer span, footer li a {
