@@ -1,0 +1,307 @@
+#aplicativo {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 12px;
+    font-family: Arial, sans-serif;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    column-gap: 15px;
+    margin-right: 4px;
+}
+
+header li a {
+    color: rgba(0, 0, 0,.87);
+    font-size: 13px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+header li a:hover{
+    text-decoration: underline;
+}
+
+header button {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+header button:hover{
+    background: rgba(60, 64, 67, 0.08);
+    border-radius: 50%;
+}
+
+header button svg{
+    width: 24px;
+    height: 24px;
+    margin: auto;
+}
+
+header button svg path {
+    fill: #5f6368;
+}
+
+.avatar {
+    height: 32;
+    width: 32;
+    cursor: pointer;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    flex-direction: column;
+    row-gap: 22px;
+    padding-bottom: 147px;
+}
+
+.botoes {
+    display: flex;
+    column-gap: 8px;
+    margin-top: 10px;
+}
+
+.botoes button {
+    background: #f8f9fa;
+    border: 1px solid #f8f9f0;
+    padding: 0 16px;
+    height: 36px;
+    font-size: 14px;
+    border-radius: 8px;
+    color: #3c4043;
+    margin: 11px 4px;
+    cursor: pointer;
+}
+
+.botoes button:hover {
+    box-shadow: #f8f9fa;
+    border-color: #dadce0;
+}
+
+.pesquisa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 688px;
+    height: 52px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    padding: 0 14px;
+    column-gap: 14px;
+}
+
+.lupa {
+    width: 20px;
+    height: 20px;
+}
+
+.lupa path {
+    fill: #9aa0a6;
+}
+
+.teclado {
+    width: 24px;
+    height: 24px;
+}
+
+.teclado path {
+    fill: #474747;
+}
+
+.mic {
+    width: 24px;
+    height: 24px;
+}
+
+.mic path {
+    fill: #474747;
+}
+
+.lens {
+    width: 24px;
+    height: 24px;
+}
+
+.lens path{
+    fill: #474747;
+}
+
+.search {
+    width: 20px;
+    height: 20px;
+}
+
+.search path {
+    fill: #474747;
+}
+
+.inteligencia {
+    border: 1px solid #ffffff;
+    font-family: Arial, sans-serif;
+    background: inherit;
+    height: 36px;
+    align-items: center;
+}
+
+.pesquisa input {
+    flex: 1;
+    border: 0;
+    background: transparent;
+    outline: none;
+}
+
+.pesquisa:hover {
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f2;
+    position: relative;
+    width: 100%;
+}
+
+footer span, footer li a {
+    font-size: 14px;
+    color: #1f1f1f;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+footer li a:hover{
+    text-decoration: underline;
+}
+
+footer span {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: #1f1f1f;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.logo {
+    width: 272px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.textgemini {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+    height: 70px;
+}
+
+.textgemini ul {
+    list-style: none;
+}
+
+.textgemini li a {
+    text-decoration: none;
+    color: #1a0dab;
+}
+
+.textgemini li a:hover{
+    text-decoration: underline;
+}
+
+.keyboard {
+    background: transparent;
+    border: 0px;
+    display: flex;
+    padding: 0px;
+    cursor: pointer;
+
+}
+
+.microfone {
+    background: transparent;
+    border: 0px;
+    display: flex;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.google_lens {
+    background: transparent;
+    border: 0px;
+    display: flex;
+    padding: 0px;
+    cursor: pointer;
+
+}
+
+.modo-ia {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f3f5f6;
+    border: 0px;
+    border-radius: 30px;
+    padding: 6px 10px;
+    color: #1f1f1f;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modo-ia:hover {
+    background-color: transparent;
+}
+
+.icone {
+    font-size: 18px;
+    display: flex;
+    padding-right: 4px;
+}
+
+.icone path{
+    fill: #474747;
+}
+
+.label {
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
